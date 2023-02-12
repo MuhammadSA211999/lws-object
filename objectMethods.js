@@ -1,3 +1,6 @@
+// Array er khettre (for in) loop index=> 1,2,3 return kore 
+// Object er khettre (for in) loop property return kore
+
 const person = {
     name: 'msa',
     age: 24,
@@ -32,5 +35,19 @@ for (let x in person2) {
 
 
 }
-console.log(fperson);
+// console.log(fperson);
+
+const car1 = {
+    name: 'lamborgini',
+    estd: '1888',
+    car2: {
+        name: 'bmw',
+        estd: '1900'
+    }
+}
+// let c=car1['car2'] // we get full car2 obj 
+// car2['name'] //bmw
+let x = car1['car2']['name']
+console.log(x); // bmw
+
 
