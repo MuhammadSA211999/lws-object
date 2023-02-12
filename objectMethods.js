@@ -4,8 +4,15 @@
 const person = {
     name: 'msa',
     age: 24,
-    work: study = () => {
+    work: function () {
+        console.log('cse in mind for game');
+
+    },
+    work2: study = () => {
         console.log('cse in mind');
+    },
+    work3: () => {
+        console.log('cse in mind for game');
 
     }
 }
@@ -49,5 +56,27 @@ const car1 = {
 // car2['name'] //bmw
 let x = car1['car2']['name']
 console.log(x); // bmw
+
+
+// OBJECTS METHODS 
+let person3 = {
+    name: 'sa',
+    age: '24',
+    eat: function () {
+        console.log((this.name + ' ' + 'is ' + this.age + ' years old').toLowerCase());
+    },
+}
+
+person3.study = () => {
+    console.log(('is Muhammad SA').toUpperCase());
+}
+
+// console.log(person3['eat']());
+// console.log(person3['study']());
+
+//OBJECT ACCESSORIES 
+
+
+
 
 
