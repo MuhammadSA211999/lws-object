@@ -74,7 +74,31 @@ person3.study = () => {
 // console.log(person3['eat']());
 // console.log(person3['study']());
 
-//OBJECT ACCESSORIES 
+//OBJECT ACCESSORIES AND COMPUTED PROPERTIES
+const person4 = {
+    fname: 'muhammad',
+    lname: 'sa',
+    get fullName() {
+        // ekhane fullName function hocce get accessor
+        return this.fname + ' ' + this.lname
+        // ekhane return kora fullName hocce computed property
+    }
+}
+console.log(person.fullName);
+
+const person5 = {
+    fname: 'muhammad',
+    lname: 'sa',
+    coun: '',
+    set fullName(counName) {
+        // ekhane fullName function hocce set accessor
+        // set theke return kora zay na
+        this.coun = counName
+        // ekhane person5 er coun name set kora hocce ebong eta computed property
+    }
+}
+console.log(person5.fullName = 'bd');
+
 
 
 
